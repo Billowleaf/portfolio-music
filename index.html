@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Photography Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -11,24 +11,70 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#portfolio"><i class="fa-solid fa-camera"></i> Portfolio</a></li>
                 <li><a href="/music/"><i class="fa-solid fa-music"></i> Music</a></li>
-                <li><a href="#"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is the main landing page. Feel free to look around!</p>
+        <!-- Section 1: Image Carousel -->
+        <section id="home" class="carousel-container">
+            <div class="carousel-slide">
+                <!-- Carousel images will be loaded here by JavaScript -->
+            </div>
+            <button class="carousel-button prev">&#10094;</button>
+            <button class="carousel-button next">&#10095;</button>
+        </section>
+
+        <!-- Section 2: About Me -->
+        <section id="about" class="about-me-container">
+            <h2>About Me</h2>
+            <div class="about-me-content">
+                <div class="about-me-image">
+                    <img src="https://via.placeholder.com/250" alt="A picture of me">
+                </div>
+                <div class="about-me-text">
+                    <p>
+                        Your description goes here. Talk about your passion for photography, your experience,
+                        and the kind of work you love to do. This is your space to connect with visitors.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Portfolio Gallery -->
+        <section id="portfolio" class="portfolio-container">
+            <h2>My Portfolio</h2>
+            <p>A collection of my best work, automatically updated from my Unsplash page.</p>
+
+            <div id="gallery-landscape">
+                <h3>Landscape</h3>
+                <div class="photo-grid" id="landscape-grid">
+                    <!-- Landscape photos from Unsplash will be loaded here -->
+                    <p>Loading images...</p>
+                </div>
+            </div>
+
+            <div id="gallery-portrait">
+                <h3>Portrait</h3>
+                <div class="photo-grid" id="portrait-grid">
+                    <!-- Portrait photos from Unsplash will be loaded here -->
+                    <p>Loading images...</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Your Name</p>
-        <!-- Add social media links or other footer content here -->
         <a href="#"><i class="fa-brands fa-github"></i></a>
         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-unsplash"></i></a>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
